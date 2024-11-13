@@ -1,6 +1,4 @@
-import { GalleryVerticalEnd, LayoutDashboard, ListTodo } from 'lucide-react';
 import {
-  Sidebar as SidebarPrimitive,
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
@@ -8,11 +6,13 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  Sidebar as SidebarPrimitive,
   SidebarRail,
 } from '@/components/ui/sidebar';
+import { GalleryVerticalEnd, LayoutDashboard, ListTodo } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-export function Sidebar() {
+export function Navigation() {
   return (
     <SidebarPrimitive>
       <SidebarHeader>
