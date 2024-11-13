@@ -1,0 +1,26 @@
+{
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/src/lib": true,
+    "**/.env": true,
+    "**/.gitignore": true,
+    "**/components.json": true,
+    "**/eslint.config.js": true,
+    "**/postcss.config.js": true,
+    "**/tailwind.config.js": true,
+    "**/tsconfig.app.json": true,
+    "**/tsconfig.json": true,
+    "**/tsconfig.node.json": true,
+    "**/vite.config.ts": true,
+    "**/vite-env.d.ts": true
+  }
+}
