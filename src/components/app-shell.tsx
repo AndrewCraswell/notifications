@@ -7,7 +7,7 @@ export function AppShell() {
   return (
     <>
       <SidebarProvider>
-        {/* <Sidebar /> */}
+        <Sidebar />
         <SidebarInset>
           <TopBar />
           <main className="flex flex-1 flex-col gap-4 p-4">
