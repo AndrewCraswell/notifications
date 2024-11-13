@@ -10,6 +10,7 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from '@/components/ui/sidebar';
+import { Link } from 'react-router-dom';
 
 export function Sidebar() {
   return (
@@ -35,18 +36,18 @@ export function Sidebar() {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <a href="/" className="font-medium">
+                  <Link to="/" className="font-medium">
                     <LayoutDashboard className="mr-2 h-4 w-4" />
                     Dashboard
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <a href="/problem" className="font-medium">
+                  <Link to="/problem" className="font-medium">
                     <ListTodo className="mr-2 h-4 w-4" />
                     Problem
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>
