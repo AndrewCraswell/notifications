@@ -9,7 +9,7 @@ import { SidebarTrigger } from '@/components/ui/sidebar';
 import { useGetRouteName } from '@/hooks/use-get-route-name';
 
 export function TopBar() {
-  //const routeName = useGetRouteName();
+  const routeName = useGetRouteName();
 
   return (
     <header className="flex h-16 shrink-0 items-center gap-2 border-b">
@@ -19,7 +19,7 @@ export function TopBar() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbPage>Dashboard</BreadcrumbPage>
+              <BreadcrumbPage>{routeName}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
