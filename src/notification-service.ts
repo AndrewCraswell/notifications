@@ -16,7 +16,7 @@ export class NotificationService {
       ...notification
     };
 
-    this.notifications.push(newNotification)
+    this.notifications = [...this.notifications, newNotification];
   }
 
   static dismiss(notificationId: string) {
