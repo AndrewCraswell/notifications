@@ -10,7 +10,7 @@ type NotificationProps = {
 
 export function Notification({ children, onDismiss }: NotificationProps) {
   return (
-    <Alert>
+    <Alert className="notification">
       <AlertTitle>Notification</AlertTitle>
       <AlertDescription>
         {children}

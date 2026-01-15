@@ -6,7 +6,7 @@ export function NotificationList() {
 
     return (
         <>{notifications.map(({ id, message }) => (
-            <Notification key={id}>
+            <Notification key={id} onDismiss={() => { NotificationService.dismiss(id) }}>
                 {message}
             </Notification>
         ))}</>

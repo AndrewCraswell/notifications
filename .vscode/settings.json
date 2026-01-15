@@ -21,6 +21,7 @@
     "**/tsconfig.json": true,
     "**/tsconfig.node.json": true,
     "**/vite.config.ts": true,
-    "**/vite-env.d.ts": true
+    "**/vite-env.d.ts": true,
+    "**/src/components/ui": true
   }
 }

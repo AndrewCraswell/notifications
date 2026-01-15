@@ -20,7 +20,8 @@ export function TopBar() {
 
   const [isOpen, setIsOpen] = useState(false)
 
-  const notifications = NotificationService.getAll()
+  const notifications = NotificationService.getAll();
+  const hasNotifications = notifications.length > 0;
 
   return (
     <header className="flex h-16 items-center gap-2 border-b">
@@ -43,7 +44,7 @@ export function TopBar() {
               className="h-8 w-8 relative"
             >
               <Bell className="h-4 w-4" />
-              <span className="absolute top-0 right-0 h-2 w-2 rounded-full bg-red-500" />
+              {hasNotifications && (<span className="absolute top-0 right-0 h-2 w-2 rounded-full bg-red-500" />)}
             </Button>
           </PopoverTrigger>
 
